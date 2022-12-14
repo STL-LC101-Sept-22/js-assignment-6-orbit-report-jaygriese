@@ -1,6 +1,24 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div>Total: <span class="counts-total">{{satellites.length}}</span></div>
+	
 </div>
 
-<!-- TODO 4: add logic to count number of satellites displayed -->
+countByType()
+
+<!-- *ngFor="let count of satelites"
+
+#counts-total 
+
+orbit-counts is a component that shows the total number of satellites currently displayed in the table.  -->
+<!-- Or at least, that's what it should do. Right now, it's just displaying NaN.
+
+To fix this, you'll need to replace the NaN string with a structural directive to indicate how many 
+satellites are on display in the table. Like orbit-list, the orbit-counts component has access to
+ the array of fetched satellites using an input property called satellites.
+
+The desired functionality is that the number displayed with change with the number of satellites displayed.
+ Checkout this gif for reference. Note, you do not need to display the counts for each satellite
+  type to pass the autograder, just use the satellite property to show the total number of satellites
+   displayed.
+Bonus Missions -->
